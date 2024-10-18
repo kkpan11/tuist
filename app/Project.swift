@@ -41,9 +41,10 @@ let project = Project(
                     "LSUIElement": true,
                     "LSApplicationCategoryType": "public.app-category.developer-tools",
                     "SUPublicEDKey": "ObyvL/hvYnFyAypkWwYaoeqE/iqB0LK6ioI3SA/Y1+k=",
-                    "SUFeedURL": "https://raw.githubusercontent.com/tuist/tuist/main/app/appcast.xml",
-                    "CFBundleShortVersionString": "0.3.0",
-                    "CFBundleVersion": "0.3.0",
+                    "SUFeedURL":
+                        "https://raw.githubusercontent.com/tuist/tuist/main/app/appcast.xml",
+                    "CFBundleShortVersionString": "0.3.1",
+                    "CFBundleVersion": "0.3.1",
                 ]
             ),
             sources: ["TuistApp/Sources/**"],
@@ -74,7 +75,7 @@ let project = Project(
             dependencies: tuistAppDependencies() + [
                 .target(name: "Tuist"),
                 .external(name: "TuistSupportTesting"),
-                .external(name: "MockableTest"),
+                .external(name: "Mockable"),
             ]
         ),
     ]

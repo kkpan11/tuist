@@ -1,5 +1,5 @@
 {
-  "originHash" : "86e4400b0c992290ab17b8e8fb4b78a3493a4114ae8e3d7ac6269abc4bee10b5",
+  "originHash" : "ad2ebca1b791c81d44294bc00db65fcbd5687864ff80774e4245eaf120f65eba",
   "pins" : [
     {
       "identity" : "aexml",
@@ -96,8 +96,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Kolos65/Mockable.git",
       "state" : {
-        "revision" : "da977ecb20974c4b1cf185f5fd38771b2d4674fb",
-        "version" : "0.0.10"
+        "revision" : "a9e5e1d222035567069ed6fff8429c327229b5f6",
+        "version" : "0.0.11"
       }
     },
     {
@@ -209,6 +209,15 @@
       }
     },
     {
+      "identity" : "swift-issue-reporting",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-issue-reporting",
+      "state" : {
+        "revision" : "770f990d3e4eececb57ac04a6076e22f8c97daeb",
+        "version" : "1.4.2"
+      }
+    },
+    {
       "identity" : "swift-log",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-log.git",
@@ -285,8 +294,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/cpisciotta/xcbeautify",
       "state" : {
-        "revision" : "d7c9ce7df96118aaa56096f4c2b94265c8e28a7c",
-        "version" : "2.5.0"
+        "revision" : "6ffe4cd38f6290496317b6740d796231dc0248d9",
+        "version" : "2.13.0"
       }
     },
     {

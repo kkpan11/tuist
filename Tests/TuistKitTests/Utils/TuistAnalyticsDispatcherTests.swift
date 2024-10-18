@@ -1,6 +1,5 @@
 import FileSystem
 import Mockable
-import MockableTest
 import TuistCore
 import TuistServer
 import TuistSupport
@@ -108,7 +107,13 @@ final class TuistAnalyticsDispatcherTests: TuistUnitTestCase {
             gitRef: nil,
             gitRemoteURLOrigin: "https://github.com/tuist/tuist",
             targetHashes: nil,
-            graphPath: nil
+            graphPath: nil,
+            cacheableTargets: [],
+            localCacheTargetHits: [],
+            remoteCacheTargetHits: [],
+            testTargets: [],
+            localTestTargetHits: [],
+            remoteTestTargetHits: []
         )
     }
 

@@ -106,6 +106,90 @@ export default defineConfig({
         },
       },
     },
+    ja: {
+      label: "Japanese",
+      lang: "ja",
+      themeConfig: {
+        nav: [
+          {
+            text: `<span style="display: flex; flex-direction: row; align-items: center; gap: 7px;">Guides ${bookOpen01Icon()}</span>`,
+            link: "/ja/",
+          },
+          {
+            text: `<span style="display: flex; flex-direction: row; align-items: center; gap: 7px;">CLI ${codeBrowserIcon()}</span>`,
+            link: "/ja/cli/auth",
+          },
+          {
+            text: `<span style="display: flex; flex-direction: row; align-items: center; gap: 7px;">Server ${server04Icon()}</span>`,
+            link: "/ja/server/introduction/why-a-server",
+          },
+          {
+            text: "Resources",
+            items: [
+              {
+                text: "References",
+                link: "/ja/references/project-description/structs/project",
+              },
+              { text: "Contributors", link: "/ja/contributors/get-started" },
+              {
+                text: "Changelog",
+                link: "https://github.com/tuist/tuist/releases",
+              },
+            ],
+          },
+        ],
+        sidebar: {
+          "/ja/contributors": contributorsSidebar("ja"),
+          "/ja/guides/": guidesSidebar("ja"),
+          "/ja/server/": serverSidebar("ja"),
+          "/ja/": guidesSidebar("ja"),
+          "/ja/cli/": await loadCLIData("ja"),
+          "/ja/references/": await referencesSidebar("ja"),
+        },
+      },
+    },
+    ru: {
+      label: "Russian",
+      lang: "ru",
+      themeConfig: {
+        nav: [
+          {
+            text: `<span style="display: flex; flex-direction: row; align-items: center; gap: 7px;">Guides ${bookOpen01Icon()}</span>`,
+            link: "/ru/",
+          },
+          {
+            text: `<span style="display: flex; flex-direction: row; align-items: center; gap: 7px;">CLI ${codeBrowserIcon()}</span>`,
+            link: "/ru/cli/auth",
+          },
+          {
+            text: `<span style="display: flex; flex-direction: row; align-items: center; gap: 7px;">Server ${server04Icon()}</span>`,
+            link: "/ru/server/introduction/why-a-server",
+          },
+          {
+            text: "Resources",
+            items: [
+              {
+                text: "References",
+                link: "/ru/references/project-description/structs/project",
+              },
+              { text: "Contributors", link: "/ru/contributors/get-started" },
+              {
+                text: "Changelog",
+                link: "https://github.com/tuist/tuist/releases",
+              },
+            ],
+          },
+        ],
+        sidebar: {
+          "/ru/contributors": contributorsSidebar("ru"),
+          "/ru/guides/": guidesSidebar("ru"),
+          "/ru/server/": serverSidebar("ru"),
+          "/ru/": guidesSidebar("ru"),
+          "/ru/cli/": await loadCLIData("ru"),
+          "/ru/references/": await referencesSidebar("ru"),
+        },
+      },
+    },
   },
   cleanUrls: true,
   head: [
